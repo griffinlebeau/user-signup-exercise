@@ -5,21 +5,33 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>user-creation-exercise</title>
     </head>
-    <body>
+    <body style="display:flex; justify-content:center; align-items:center">
         <div>
-            <form id="user-signup">
-                <label for="name">Full name:</label>
-                <input id="name" type="text" name="name"/>
-                <label for="email">Email:</label>
-                <input id="email" type="text" name="email"/>
-                <label for="password">Password:</label>
-                <input id="password" type="text" name="password"/>
-                <label for="occupations">Choose an occupation:</label>
-                <select id="occupations" name="occupations"></select>
-                <label for="states">Choose a state:</label>
-                <select id="states" name="states"></select>
-                <input type="submit" value="Submit">
-                <p id="error"></p>
+            <form style="border-radius:10px; justify-content:center; max-width:auto; margin:10%; background-color:antiquewhite; display:flex; flex-direction:column; align-items:space-around;" id="user-signup">
+                <div style="margin:4%">
+                    <label for="name">Full name:</label>
+                    <input id="name" type="text" name="name"/>
+                </div>
+                <div style="margin:4%">
+                    <label for="email">Email:</label>
+                    <input id="email" type="text" name="email"/>
+                </div>
+                <div style="margin:4%">
+                    <label for="password">Password:</label>
+                    <input id="password" type="text" name="password"/>
+                </div>
+                <div style="margin:4%">
+                    <label for="occupations">Choose an occupation:</label>
+                    <select id="occupations" name="occupations"></select>
+                </div>
+                <div style="margin:4%">
+                    <label for="states">Choose a state:</label>
+                    <select id="states" name="states"></select>
+                </div>
+                <div style="margin:4%">
+                    <input type="submit" value="Submit">
+                    <p id="error"></p>
+                </div>
             </form>
         </div>
         <script src="./script.js"></script>
